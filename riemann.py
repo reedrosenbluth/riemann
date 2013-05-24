@@ -4,7 +4,6 @@ import numpy as np
 import matplotlib
 import matplotlib.pyplot as plt
 
-
 def reimann(a, b, n, l, f):
     numRange = np.arange(a, b, .02)
     y = f(numRange)
@@ -19,10 +18,8 @@ def reimann(a, b, n, l, f):
     s = w * x
     print '\n', s, '\n'
 
-
 def main():
-    print #empty line
-    functionString = raw_input("Enter a function: ")
+    functionString = raw_input("\nEnter a function: ")
     a = input("Enter the start point: ")
     b = input("Enter the end point: ")
     n = input("Enter the number of rectangles: ")
